@@ -1,0 +1,124 @@
+.promo {
+    width: 1920px;
+    min-height: 650px;
+    padding: 21px 0 93px 0; 
+    background: url("../img/main.jpg") center (center/cover) no-repeat;
+}
+.container {
+    display: block;
+    position: relative;
+    width: 942px;
+    margin: 0 auto;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    &-logo {
+        width: 251px;
+        height: 45px;
+    }
+    &-firm {
+        width: 215px;
+        p{
+            color: rgb(255, 255, 255);
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 12px;
+            letter-spacing: 0px;
+            text-align: center;
+        }
+        span {
+            color: rgb(255, 255, 255);
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 23px;
+            letter-spacing: 0px;
+            text-align: center;
+            margin-left: 17px;
+
+        }
+    }
+    &-tel {
+        width: 191px;
+        a{
+        color: rgb(255, 255, 255);
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 18px;
+        letter-spacing: 0px;
+        text-align: right;
+        text-decoration: none;
+    }
+    }
+}
+.promo-text {
+    width: 527px;
+    margin: 90px auto;
+    h1 {
+        color: rgb(255, 255, 255);
+        font-size: 42px;
+        font-weight: 700;
+        line-height: 42px;
+        letter-spacing: 0px;
+        text-align: right;
+        text-transform: uppercase;
+        transition: 1s all;
+        &:hover {
+            color:$main-color;
+        }
+    }
+    h2 {
+        color: rgb(255, 255, 255);
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 40px;
+        letter-spacing: 0px;
+        text-align: right;
+        text-transform: uppercase;
+    
+    }
+}
+.promo-item {
+    display: flex;
+    width: 424px;
+    margin: 60px auto;
+    justify-content: space-between;
+    &__screen {
+        width: 136px;
+        img {
+            width: 42px;
+            height: 46px;
+            margin-left: 45px;
+          }
+        p {
+            color: rgb(255, 255, 255);
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 14px;
+            letter-spacing: 0px;
+            text-align: center;
+            transition: 1s all;
+            margin-top: 20px;
+            &:hover{
+                color: $main-color;
+            }
+        }  
+    }
+}
+.promo-footer {
+    display: block;
+    position: absolute;
+    width: 310px;
+    left: 450px;
+   
+    a {
+        color: rgb(255, 255, 255);
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 50px;
+        letter-spacing: 0px;
+        padding-left: 115px;
+        text-decoration: none;
+    }
+     
+}

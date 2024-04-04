@@ -1,0 +1,9 @@
+{
+    "liveSassCompile.settings.autoprefix": [],
+    "sass.andStared": [
+        "active",
+        "focus",
+        "hover",
+        "nth-child"
+    ]
+}

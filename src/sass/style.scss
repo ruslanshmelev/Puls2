@@ -1,0 +1,14 @@
+@import 'libs/bootstrap-grid.min';
+@import 'libs/bootstrap-reboot.min';
+@import 'libs/fonts';
+@import 'base/varables';
+@import 'libs/animate.scss';
+@import 'base/animation';
+* {
+    box-sizing: border-box;
+    font-family: Museo Sans Cyrl;
+}
+@import 'blocks/promo';
+@import 'blocks/buttons';
+@import 'blocks/advantage';
+@import 'blocks/taitel'
