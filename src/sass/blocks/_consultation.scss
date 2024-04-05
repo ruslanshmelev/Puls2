@@ -1,0 +1,35 @@
+.consultation {
+    min-height: 680px;
+    padding: 100px 0 92px 0;
+    background: url('../img/consultation.jpg') center (center/cover) no-repeat;
+}
+.consultation-taitel {
+    width: 798px;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 54px;
+    letter-spacing: 0px;
+    text-align: left;
+    text-transform: uppercase;
+}
+.consultation-subtaitel {
+    width: 426px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+.consultation-form {
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    input {
+        width: 303px;
+        height: 54px;
+        margin-top: 11px;
+    }
+    
+}
