@@ -5,7 +5,7 @@
     margin-top: 46px;
     &__caption {
         display: flex;
-        width: 670px;
+        width: 942px;
         height: 52px;
         flex-direction: row;
         list-style: none;
@@ -44,6 +44,7 @@
 } 
 .tabs__content {
     display: none;
+    width: 942px;
     flex-wrap: wrap;
     min-height: 442px;
     margin-top: 57px;
