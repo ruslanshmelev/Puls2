@@ -24,7 +24,7 @@
 					</div>
 				</div>
 				<div class="promo-text">
-					<h1>Подбор пульсометра</h1>
+					<h1 class="wow animate__flipOutX">Подбор пульсометра</h1>
 					<h2>с учётом Вашего уровня подготовки</h2>
 			</div>
 			<div class="promo-item">
@@ -42,7 +42,7 @@
 				</div>
 			</div>
 			<div class="promo-footer">
-				<div class="button button_main">заказать КОНСУЛЬТАЦИЮ</div>
+				<div class="button button_main" data-modal="consultation">заказать КОНСУЛЬТАЦИЮ</div>
 				<a href="#">или ПЕРЕЙТИ В КАТАЛОГ</a>
 			</div>
 	</section>
@@ -89,7 +89,7 @@
 			<input name="name" placeholder="Ваше имя">
 			<input name="phone" placeholder="Ваш телефон"> 
 			<input name="email" placeholder="Ваша почта"> 
-			<button class="button button_form">заказать кОНСУЛЬТАЦИЮ</button> 
+			<div class="button button_main" data-modal="consultation">заказать КОНСУЛЬТАЦИЮ</div>
 		 </form>
 		</div>
 	</section>
@@ -406,7 +406,7 @@
 	<section class="review">
 		<div class="container">
 			<div class="taitel">отзывы клиентов</div>
-			<div class="review-item">
+			<div class="review-item animate__animated animate__rotateIn animate__delay-5s">
 				<div class="review-item__img"><img src="img/feed_1.png" alt="gn"></div>
 				<div class="review-item__text">
 					<h2>Ирина Иванченко </h2>
@@ -415,7 +415,7 @@
 						<br>Спасибо, RunSmart! </span>
 				</div>
 			</div>
-			<div class="review-item">
+			<div class="review-item wow animate__rollIn animate__delay-5s">
 				<div class="review-item__img"><img src="img/feed_2.png" alt="rg"></div>
 				<div class="review-item__text">
 					<h2>Иван Сёмочкин</h2>
@@ -423,7 +423,7 @@
 					<span>Крутая штука-пульсометр. Обычно без них бегал. Оказывается только хуже себе делал. Купил пульсометр, ещё в подарок получил тренировку. Со мной вместе провели первую тренировку, научили пользоваться новым гаджетом. Также объяснили основы анатомии, составили план тренировок на месяц вперёд.С ними подготовился к своему первому полумарафону! <br>Спасибо!!!</span>
 				</div>
 			</div>
-			<div class="review-item">
+			<div class="review-item animate__animated animate__slideInLeft animate__delay-5s">
 				<div class="review-item__img"><img src="img/feed_3.png" alt="fg"></div>
 				<div class="review-item__text">
 					<h2>Юлия Дашкина</h2>
@@ -446,12 +446,42 @@
 			</div>
 		</div>
 	</footer>
+	<div class="blackout">
+		<div class="modal" id="consultat" >
+			<div class="modal__close">&times;</div>
+			<div class="taitel taitel_min">Просто заполните форму заявки</div>
+			<div class="modal__subtaitel">и мы перезвоним вам в течении 10 минут</div>
+			<form class="modal__consultant" action="">
+				<input name="name" placeholder="Ваше имя">
+				<input name="phone" placeholder="Ваш телефон"> 
+				<input name="email" placeholder="Ваша почта"> 
+			</form>
+			<button data-modal="sen" class="button button_form">заказать кОНСУЛЬТАЦИЮ</button>
+		</div>
+		<div class="modal" id="buy">
+			<div class="modal__close">&times;</div>
+			<div class="taitel taitel_min">Ваш заказ:</div>
+			<div class="modal__subtaitel">Пульсометр Polar FT1</div>
+			<form class="modal__consultant" action="">
+				<input name="name" placeholder="Ваше имя">
+				<input name="phone" placeholder="Ваш телефон"> 
+				<input name="email" placeholder="Ваша почта"> 
+			</form>
+			<button data-modal="sen" class="button button_form">Купить</button>
+		</div>
+		<div class="modal modal_min" id="mini">
+			<div class="modal__close">&times;</div>
+			<div class="taitel taitel_min">Спасибо за вашу заявку!</div>
+			<div class="modal__subtaitel">Наш менеджер свяжется с вами в ближайшее время!</div>	
+		</div>
+	</div>
 
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/1.2.1/jquery-migrate.min.js"></script>
     <script src="js/slick.min.js"></script>
-    <script src="js/wow.min.js"></script>
+	<script src="js/validation.jquery.json"></script>
+   <script src="js/wow.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

@@ -21,6 +21,7 @@ $('ul.tabs__caption').on('click', 'li:not(.tabs__caption__tab_active)', function
       .addClass('tabs__caption__tab_active').siblings().removeClass('tabs__caption__tab_active')
       .closest('div.tabs').find('div.tabs__content').removeClass('tabs__content_active').eq($(this).index()).addClass('tabs__content_active');
   });
+  new WOW().init();
 /*оборотная сторонс*/
 function toggleSlide(item) {
 	$(item).each(function(i) {
@@ -34,7 +35,26 @@ function toggleSlide(item) {
 
 toggleSlide('.tabs-item__dscp__det');
 toggleSlide('.tabs-item__list__back');
+/*модальные окна*/
+$('[data-modal=consultation]').on('click', function() {
+    $('.blackout, #consultat').fadeIn('slow');
+});
+$('[data-modal=sen]').on('click', function() {
+    $('.blackout, #mini').fadeIn('slow');
 
+    $('#consultat, #buy').fadeOut('1');
+});
+$('.modal__close').on('click', function() {
+$('.blackout, #consultat, #buy, #mini').fadeOut('slow');
+});
+
+$('.button_min').each(function(i) {
+    $(this).on('click', function() {
+        $('#buy .modal__subtaitel').text($('.tabs-item__dscp__text').eq(i).text());
+        $('.blackout, #buy').fadeIn('slow');
+    })
+});
+    
 
 
 

@@ -2,7 +2,7 @@
 @import 'libs/bootstrap-reboot.min';
 @import 'libs/fonts';
 @import 'base/varables';
-@import 'libs/animate.scss';
+@import 'libs/animate.min.scss';
 @import 'libs/slick';
 @import 'base/animation';
 * {
@@ -18,5 +18,5 @@
 @import 'blocks/catalog';
 @import 'blocks/review';
 @import 'blocks/footer';
-
+@import 'blocks/modal';
 

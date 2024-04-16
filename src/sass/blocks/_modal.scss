@@ -1,0 +1,56 @@
+.blackout {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(0,0,0, .56);
+ }
+.modal {
+    width: 382px;
+    height: 402px;
+    top: 20%;
+    left: 30%;
+    background: rgb(242, 242, 242);
+    padding: 20px 40px 40px 40px;
+    position: relative;
+    &__subtaitel {
+        color: rgb(13, 13, 13);
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 20px;
+        letter-spacing: 0px;
+        text-align: center;
+       }
+    &_min {
+        height: 143px;
+       
+    }   
+}
+.modal__consultant {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 20px;
+    
+    input {
+        width: 300px;
+        height: 50px;
+        margin-top: 10px;
+    }
+   }
+.modal__close {
+    position: absolute;
+    font-size: 40px;
+    color: $main-color;
+    right: -50px;
+    top: -20px;
+    cursor: pointer;
+   
+}  
+#consultat, #buy, #mini{
+    display: none;
+}
+
+
+
