@@ -47,7 +47,10 @@
     top: -20px;
     cursor: pointer;
    
-}  
+} 
+.error {
+    color: $main-color;
+} 
 #consultat, #buy, #mini{
     display: none;
 }

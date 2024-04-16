@@ -20,7 +20,7 @@
 					<div class="header-tel">
 						<a class="header-phone" href="tel:+74999228974">+7 (499) 922-89-74</a><br>
 					
-						<button class="button">заказать звонок</button>
+						<button class="button" data-modal=consultation>заказать звонок</button>
 					</div>
 				</div>
 				<div class="promo-text">
@@ -85,10 +85,10 @@
 			<h2 class="consultation-taitel">Получите бесплатную консультацию по <br>
 				подбору пульсометра </h2>
 			<p class="consultation-subtaitel">Получите бесплатную консультациюпо подбору пульсометра </p>
-		 <form class="consultation-form" action="">
-			<input name="name" placeholder="Ваше имя">
-			<input name="phone" placeholder="Ваш телефон"> 
-			<input name="email" placeholder="Ваша почта"> 
+		 <form id="consultation-form" class="consultation-form" action="#">
+			<input name="name" required placeholder="Ваше имя">
+			<input name="phone" required   placeholder="Ваш телефон"> 
+			<input name="email" required   placeholder="Ваша почта"> 
 			<div class="button button_main" data-modal="consultation">заказать КОНСУЛЬТАЦИЮ</div>
 		 </form>
 		</div>
@@ -406,7 +406,7 @@
 	<section class="review">
 		<div class="container">
 			<div class="taitel">отзывы клиентов</div>
-			<div class="review-item animate__animated animate__rotateIn animate__delay-5s">
+			<div class="review-item wow animate__rotateIn">
 				<div class="review-item__img"><img src="img/feed_1.png" alt="gn"></div>
 				<div class="review-item__text">
 					<h2>Ирина Иванченко </h2>
@@ -415,7 +415,7 @@
 						<br>Спасибо, RunSmart! </span>
 				</div>
 			</div>
-			<div class="review-item wow animate__rollIn animate__delay-5s">
+			<div class="review-item animate__animated animate__rollIn animate__delay-5s">
 				<div class="review-item__img"><img src="img/feed_2.png" alt="rg"></div>
 				<div class="review-item__text">
 					<h2>Иван Сёмочкин</h2>
@@ -480,8 +480,8 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/1.2.1/jquery-migrate.min.js"></script>
     <script src="js/slick.min.js"></script>
-	<script src="js/validation.jquery.json"></script>
-   <script src="js/wow.min.js"></script>
+	<script src="js/jquery.validate.min.js"></script>
+	<script src="js/wow.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

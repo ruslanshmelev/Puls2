@@ -21,7 +21,7 @@ $('ul.tabs__caption').on('click', 'li:not(.tabs__caption__tab_active)', function
       .addClass('tabs__caption__tab_active').siblings().removeClass('tabs__caption__tab_active')
       .closest('div.tabs').find('div.tabs__content').removeClass('tabs__content_active').eq($(this).index()).addClass('tabs__content_active');
   });
-  new WOW().init();
+  new WOW().init(); 
 /*оборотная сторонс*/
 function toggleSlide(item) {
 	$(item).each(function(i) {
@@ -41,8 +41,7 @@ $('[data-modal=consultation]').on('click', function() {
 });
 $('[data-modal=sen]').on('click', function() {
     $('.blackout, #mini').fadeIn('slow');
-
-    $('#consultat, #buy').fadeOut('1');
+    $('#consultat, #buy').fadeOut('slow');
 });
 $('.modal__close').on('click', function() {
 $('.blackout, #consultat, #buy, #mini').fadeOut('slow');
@@ -54,8 +53,36 @@ $('.button_min').each(function(i) {
         $('.blackout, #buy').fadeIn('slow');
     })
 });
-    
+    /*Валидация*/
+    function validateForms(form){
+        $(form).validate({
+            rules: {
+                name: {
+                    required: true,
+                    minlength: 2
+                },
+                phone: "required",
+                email: {
+                    required: true,
+                    email: true
+                }
+            },
+            messages: {
+                name: {
+                    required: "Пожалуйста, введите свое имя",
+                    minlength: jQuery.validator.format("Введите {0} символа!")
+                  },
+                phone: "Пожалуйста, введите свой номер телефона",
+                email: {
+                  required: "Пожалуйста, введите свою почту",
+                  email: "Неправильно введен адрес почты"
+                }
+            }
+        });
+    };
 
-
+    validateForms('#consultation-form');
+    validateForms('#consultat form');
+    validateForms('#buy form');
 
 });
